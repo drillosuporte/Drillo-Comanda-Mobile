@@ -1,84 +1,211 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Política de Privacidade — Drillo Comanda Mobile</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height:1.6; padding:24px; color:#222 }
-    h1,h2 { color:#222 }
-    pre{ background:#f6f6f6; padding:12px }
-    footer{ margin-top:28px; font-size:0.9rem; color:#555 }
-  </style>
-</head>
-<body>
-  <h1>Política de Privacidade — Drillo Comanda Mobile</h1>
-  <p>Última atualização: 2025-09-09</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Política de Privacidade — Drillo</title>
+    <meta name="description" content="Política de Privacidade do aplicativo Drillo (com.drillo.off)." />
+    <style>
+      :root {
+        --brand: #B94C2D; /* primary */
+        --brand-light: #DE7A56; /* secondary */
+        --bg: #F7F0EB;
+        --text: #212121;
+        --muted: #666666;
+        --card: #ffffff;
+        --border: #e6ddd7;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font: 400 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      }
+      .header {
+        background: linear-gradient(135deg, var(--brand), #a34126 70%);
+        color: #fff;
+        padding: 28px 16px;
+      }
+      .wrap { max-width: 980px; margin: 0 auto; padding: 0 12px; }
+      .brand {
+        display: flex; align-items: center; gap: 14px;
+      }
+      .brand h1 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: .2px; }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 20px;
+        margin: 18px 0;
+        box-shadow: 0 4px 16px rgba(0,0,0,.04);
+      }
+      h2 { font-size: 20px; margin: 0 0 10px; color: var(--brand); }
+      h3 { font-size: 18px; margin: 16px 0 6px; color: var(--text); }
+      p { margin: 8px 0; }
+      ul { margin: 8px 0 8px 20px; }
+      small, .muted { color: var(--muted); }
+      .badge { display:inline-block; background: rgba(222,122,86,.15); color: var(--brand); padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+      .footer { color: var(--muted); text-align: center; padding: 28px 12px; font-size: 14px; }
+      .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0; }
+      code { background: #f3eae5; padding: 1px 6px; border-radius: 6px; }
+      a { color: var(--brand); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .kvs { display:grid; grid-template-columns: 1fr; gap:8px; }
+      .kv { display:flex; gap:8px; }
+      .kv .k { min-width: 180px; color: var(--muted); }
+      @media (min-width: 720px) { .kvs { grid-template-columns: 1fr 1fr; } }
+      /* Inline SVG sizing */
+      .logo { width: 56px; height: 56px; display:inline-block; }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrap brand">
+        <!-- Logo Drillo (SVG inline para evitar paths externos) -->
+        <span class="logo" aria-hidden="true">
+          <!-- BEGIN: Drillo.svg (simplificado: original completo preservado) -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17670.97 17670.97" role="img" aria-label="Drillo">
+            <defs>
+              <style>
+                .fil0{fill:none}.fil2{fill:#B24E2E}.fil1{fill:#B24E2E}
+              </style>
+            </defs>
+            <g>
+              <rect class="fil0" x="0.01" y="0.01" width="17670.96" height="17670.96"/>
+              <g>
+                <path class="fil1" d="M10411.22 6218.68c-60.7,384.14 -47.76,670.33 -308.41,1105.54 -50.73,84.7 -85.5,137.72 -136.37,215.21 -354.92,540.76 -815.84,949.06 -962.34,1563.73 -49.69,208.49 -59.33,432.04 -15.62,643.05 62.34,301 169,346.01 244.33,452.98 -822.26,59.25 -1175.3,-542.14 -903.68,-1352.33 104.67,-312.21 270.18,-554.86 431.19,-791.88 560.01,-824.49 1081.48,-1676.42 782.38,-2771.57 -109.48,-400.86 -231.11,-532.22 -433.21,-819.3 -72.01,-102.29 -448.51,-430.6 -568.07,-514.1 -85.81,-59.92 -35.55,-36.41 -135.22,-64.28 137.01,878.52 -175.54,1657.73 -655.02,2193.4l-610.2 663.55c-130.33,162.09 -160.58,163.8 -299.77,361.69 -47.51,67.56 -100.67,121.7 -142.92,185.98 -631.64,960.92 -665.28,2183.82 158.46,3058.25 166.26,176.49 349.39,292.82 571.4,421.74 595.58,345.85 1397.49,402.16 2108.75,209.91 318.54,-86.09 648.29,-264.81 860.1,-415.9l334.41 -303.23c94.46,-110.81 209.89,-228.66 297.3,-362.16 579.7,-885.38 534.25,-2015.24 -56.49,-2956.02 -71.88,-114.47 -463.22,-668.18 -561.01,-724.28z"/>
+                <g>
+                  <path class="fil2" d="M12592.11 11671.75c-753.94,167.73 -1089.43,1024.57 -644.93,1665.6 647.73,934.09 2263.53,290.17 1957.08,-857.92 -170.02,-636.94 -759.68,-930.58 -1312.16,-807.68zm112.6 423.42c-835.49,240.26 -457.03,1414.25 254.11,1242.23 517.44,-125.17 670.08,-715.38 278.38,-1099.64 -135.14,-132.58 -333.29,-199.89 -532.49,-142.59z"/>
+                  <path class="fil2" d="M3728.46 13745.91c530.63,-35.85 1800.01,198.02 1823.34,-1004.73 8.55,-441.49 -242.57,-790.17 -513.16,-929.57 -359.88,-185.43 -878.37,-85.54 -1301.39,-117.6l-8.78 2051.91zm467.13 -385.4c263.87,-11.34 395.46,5.69 603.88,-118.56 352.07,-209.88 604.14,-1125 -606.08,-1155.45l2.2 1274.01z"/>
+                  <path class="fil2" d="M5866.23 13744.7l445.4 -5.91 16.62 -729.81 275.03 -0.25c36.92,109.79 357.08,650.56 427.64,738.53l505.47 -11.27c-7.5,-84.9 -398.66,-707.57 -453.32,-763.5 0.15,-0.17 743.64,-472.08 189.55,-1069.48 -287.42,-309.87 -937.11,-172.32 -1399.17,-207.72l-7.23 2049.41zm461.5 -1092.19l542 -22.69c109.9,-127.01 201.53,-305.79 60.99,-457.35 -131.15,-141.4 -416.09,-85.68 -604.43,-92.46l1.44 572.5z"/>
+                  <path class="fil2" d="M8795.61 13741.39l1269.88 -1.31 18.14 -391.11 -814.26 7.19 -7.01 -1663.13 -458.48 8.17 -8.26 2040.19z"/>
+                  <path class="fil2" d="M10405.12 13741.96l1262.33 -3.27 15.14 -377.75 -810.54 -5.02 -6.16 -1662.53 -452.85 7.66 -7.93 2040.92z"/>
+                  <path class="fil2" d="M7928.32 13746.71l454.92 -5.16 10.32 -2048.79 -457.25 8.09 -7.99 2045.86z"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <!-- END: Drillo.svg -->
+        </span>
+        <div>
+          <h1>Política de Privacidade</h1>
+          <div class="badge">Drillo • pacote: com.drillo.off</div>
+        </div>
+      </div>
+    </header>
 
-  <h2>1. Introdução</h2>
-  <p>Esta Política de Privacidade descreve como o aplicativo <strong>Drillo Comanda Mobile</strong> coleta, usa, armazena e compartilha informações dos usuários. Leia com atenção. Se houver dúvidas, entre em contato com o responsável pelos dados no e‑mail informado no final.</p>
+    <main class="wrap" aria-labelledby="tit">
+      <div class="card">
+        <h2 id="tit">Visão geral</h2>
+        <p>
+          Esta Política descreve como o aplicativo <strong>Drillo</strong> trata dados dos usuários. O Drillo é um app de gestão de comandas e cardápio <strong>com uso local/offline</strong>, com opção de <strong>backup no Google Drive (appDataFolder)</strong> quando o usuário vincula sua conta Google. Não há servidores próprios do Drillo armazenando seus dados.
+        </p>
+        <div class="kvs" role="group" aria-label="Metadados">
+          <div class="kv"><div class="k">Versão do app</div><div>1.0.1+1</div></div>
+          <div class="kv"><div class="k">Atualizado em</div><div>16/09/2025</div></div>
+          <div class="kv"><div class="k">Plataforma</div><div>Android</div></div>
+        </div>
+      </div>
 
-  <h2>2. Dados que coletamos</h2>
-  <ul>
-    <li><strong>Dados de conta</strong>: e‑mail e identificador do Google quando você autentica via Google Sign‑In (apenas se optar por autenticar).</li>
-    <li><strong>Dados do app</strong>: produtos, pedidos, mesas, histórico de vendas e outras informações comerciais que você criar no aplicativo.</li>
-    <li><strong>Backups</strong>: ao salvar backups no Google Drive, os dados do app são gravados na sua conta Google (AppDataFolder) para permitir restauração/sincronização.</li>
-  <li><strong>Dados de diagnóstico</strong>: logs de erro e métricas de uso (se habilitados) para melhorar o aplicativo.</li>
-  <li><strong>Preferências e dispositivos</strong>: informações sobre impressoras Bluetooth emparelhadas e preferências do aplicativo (armazenadas localmente).</li>
-  </ul>
+      <div class="card">
+        <h2>Controlador e contato</h2>
+        <p>
+          <em><!-- TODO: Substitua pelo responsável legal/empresa e e-mail de contato. --></em>
+        </p>
+        <ul>
+          <li>Nome/Razão Social: <strong><!-- Ex.: Drillo Apps LTDA --></strong></li>
+          <li>E-mail: <a href="mailto:contato@seu-dominio.com">contato@seu-dominio.com</a></li>
+        </ul>
+        <p class="muted">Se você for um titular de dados (LGPD/GDPR), use o e-mail acima para exercer seus direitos.</p>
+      </div>
 
-  <h2>3. Finalidade do processamento</h2>
-  <p>Usamos os dados para:</p>
-  <ul>
-    <li>Autenticar usuários (opcional) para permitir backups remotos;</li>
-    <li>Salvar e restaurar backups do estado do aplicativo;</li>
-    <li>Fornecer suporte e diagnosticar problemas;</li>
-    <li>Melhorar e manter o aplicativo.</li>
-  </ul>
+      <div class="card">
+        <h2>Quais dados tratamos</h2>
+        <p>O app opera principalmente com dados <strong>locais no dispositivo</strong>. Exemplos:</p>
+        <ul>
+          <li>Catálogo (categorias e produtos), mesas, pedidos/itens, sessões de caixa, métodos de pagamento (nomes), configurações do app.</li>
+          <li>Logo da loja (se você selecionar uma imagem da galeria para imprimir no cupom/PDF).</li>
+          <li>Informações de impressora Bluetooth pareada (nome/endereço do dispositivo) para impressão térmica.</li>
+          <li>E-mail da sua conta Google <em>(apenas quando você vincula para backup)</em>, guardado localmente para lembrar o vínculo.</li>
+        </ul>
+        <p>Não coletamos por padrão: localização, contatos, microfone, câmera, nem dados biométricos.</p>
+      </div>
 
-  <h2>4. Compartilhamento de dados</h2>
-  <p>Não vendemos dados pessoais. Podemos utilizar provedores de serviços terceiros (por exemplo, serviços de nuvem para backups, analytics, ou crash reporting). Esses provedores processam dados conforme contratos e políticas deles.</p>
+      <div class="card">
+        <h2>Finalidades do tratamento</h2>
+        <ul>
+          <li><strong>Operação do app offline</strong>: criação e gestão de cardápio, pedidos e caixa, com persistência local (SharedPreferences/SQLite).</li>
+          <li><strong>Impressão térmica Bluetooth</strong>: conectar a uma impressora próxima para imprimir recibos/cupom.</li>
+          <li><strong>Backup/Restauro (opcional, plano Pro)</strong>: salvar/restaurar um único arquivo JSON no <em>Google Drive (appDataFolder)</em> da sua conta, mediante seu login Google.</li>
+          <li><strong>Compras no app (Pro)</strong>: processadas pela Google Play; o Drillo não recebe dados de cartão.</li>
+        </ul>
+      </div>
 
-  <h2>5. Armazenamento local</h2>
-  <p>O aplicativo armazena dados localmente no dispositivo usando SQLite e SharedPreferences. Isso inclui produtos, pedidos, configurações, histórico e informações de impressoras emparelhadas. Esses dados não são compartilhados por padrão, exceto quando você optar por realizar um backup ou compartilhar manualmente.</p>
+      <div class="card">
+        <h2>Onde os dados ficam</h2>
+        <ul>
+          <li><strong>No seu dispositivo</strong>: dados de uso do app (catálogo, pedidos, configurações) ficam em armazenamento local.</li>
+          <li><strong>No seu Google Drive (se ativado)</strong>: um único arquivo <code>drillo_backup.json</code> é gravado na pasta reservada <code>appDataFolder</code>, acessível apenas pelo app.</li>
+          <li><strong>Sem servidores próprios</strong>: o Drillo não envia seus dados a servidores do desenvolvedor.</li>
+        </ul>
+      </div>
 
-  <h2>6. Impressão via Bluetooth</h2>
-  <p>O app pode conectar‑se a impressoras térmicas via Bluetooth para imprimir comandas. Informações sobre dispositivos emparelhados são armazenadas localmente. Dados enviados à impressora podem conter detalhes dos pedidos (itens, quantidades, valores).</p>
+      <div class="card">
+        <h2>Permissões e integrações</h2>
+        <ul>
+          <li><strong>Bluetooth</strong> (impressoras): usado para parear/conectar e imprimir. Não rastreamos sua localização.</li>
+          <li><strong>Galeria/Arquivos</strong> (logo da loja): acesso somente quando você escolhe uma imagem para a logo.</li>
+          <li><strong>Internet</strong>: necessária para login Google, integração Drive e verificação de compras.</li>
+          <li><strong>Google Sign-In</strong>: utilizado apenas para autenticar você e gravar o backup no seu Drive. Guardamos localmente o e-mail da conta vinculada para conveniência.</li>
+          <li><strong>Google Drive API</strong>: escopo limitado ao <code>appDataFolder</code> (somente os arquivos do Drillo).</li>
+          <li><strong>Google Play Billing</strong>: para ativar o plano Pro; os pagamentos são processados pelo Google.</li>
+        </ul>
+        <p class="muted">As permissões podem variar conforme a versão do Android (ex.: <code>READ_MEDIA_IMAGES</code> em versões recentes para fotos).</p>
+      </div>
 
-  <h2>7. Compras no aplicativo</h2>
-  <p>O aplicativo oferece compras dentro do app (Google Play Billing) para desbloquear recursos pagos. As transações e informações de pagamento são processadas pela Google Play; o aplicativo não armazena números de cartão.</p>
+      <div class="card">
+        <h2>Compartilhamento de dados</h2>
+        <p>Não compartilhamos seus dados com terceiros além das integrações necessárias descritas acima (Google para autenticação/backup e faturamento).</p>
+      </div>
 
-  <h2>8. Acesso a mídia e arquivos</h2>
-  <p>O aplicativo pode solicitar acesso à câmera ou galeria (por exemplo, via Image Picker) para permitir seleção de imagens como logotipos ou fotos de produto. Também usamos o armazenamento do dispositivo para salvar arquivos temporários ou exportados.</p>
+      <div class="card">
+        <h2>Retenção e exclusão</h2>
+        <ul>
+          <li><strong>Dados locais</strong>: permanecem no dispositivo até você desinstalar o app ou limpar os dados do aplicativo.</li>
+          <li><strong>Backup no Drive</strong>: permanece na sua conta Google até você removê-lo (o app pode substituir ou apagar o arquivo <code>drillo_backup.json</code>).
+          </li>
+          <li><strong>Desvincular conta</strong>: você pode remover o vínculo Google dentro do app (Configurações &rarr; Backup &rarr; Desvincular conta).</li>
+        </ul>
+      </div>
 
-  <h2>9. Compartilhamento de conteúdo e abertura de links</h2>
-  <p>O app pode abrir links externos no navegador e permitir que você compartilhe conteúdos (como relatórios ou tickets) através de outras aplicações instaladas no dispositivo (uso de intents/share).</p>
+      <div class="card">
+        <h2>Seus direitos (LGPD/GDPR)</h2>
+        <p>Como titular de dados, você pode solicitar acesso, correção, portabilidade, anonimização ou exclusão dos dados. Para isso, entre em contato pelo e-mail indicado acima.</p>
+      </div>
 
-  <h2>10. Chamadas de rede</h2>
-  <p>O app realiza conexões de rede (por exemplo, para backups no Google Drive ou integrações externas) e utiliza comunicação segura (HTTPS) quando aplicável.</p>
+      <div class="card">
+        <h2>Crianças e adolescentes</h2>
+        <p>O Drillo não é direcionado a crianças. Não coletamos intencionalmente dados de menores de 13 anos.</p>
+      </div>
 
-  <h2>11. Analytics e reporte de falhas</h2>
-  <p>No momento, este repositório não inclui integrações com serviços de analytics ou crash reporting (como Firebase Analytics ou Sentry). Se futuramente adicionarmos, esta política será atualizada.</p>
+      <div class="card">
+        <h2>Alterações nesta Política</h2>
+        <p>Podemos atualizar esta Política de Privacidade. As alterações serão publicadas nesta página com a data de atualização.</p>
+      </div>
 
-  <h2>12. Backups no Google Drive</h2>
-  <p>Se você optar por salvar backups no Google Drive, o app solicitará autorização via Google Sign‑In. Os backups serão armazenados na sua conta Google, no espaço protegido AppDataFolder, e apenas você poderá acessá‑los mediante sua conta Google.</p>
+      <div class="card">
+        <h2>Terceiros e políticas externas</h2>
+        <ul>
+          <li><a href="https://policies.google.com/privacy?hl=pt-BR" target="_blank" rel="noopener">Política de Privacidade do Google</a></li>
+          <li><a href="https://developers.google.com/identity/sign-in/android/terms-of-service?hl=pt-br" target="_blank" rel="noopener">Termos do Google Sign-In</a></li>
+          <li><a href="https://play.google.com/intl/pt-BR_br/about/play-terms/" target="_blank" rel="noopener">Termos da Google Play</a></li>
+        </ul>
+      </div>
+    </main>
 
-  <h2>13. Retenção e exclusão</h2>
-  <p>Os dados permanecem enquanto você mantiver o app ou até que solicite exclusão. Backups remotos persistem na sua conta Google de acordo com as configurações do próprio Drive. Para excluir dados locais, desinstale o aplicativo ou use as opções internas (se disponíveis).</p>
-
-  <h2>14. Segurança</h2>
-  <p>Tomamos medidas técnicas e organizacionais razoáveis para proteger seus dados (por exemplo, comunicação via HTTPS). Nenhum método de transmissão ou armazenamento é 100% seguro — se houver preocupação, entre em contato.</p>
-
-  <h2>15. Seus direitos</h2>
-  <p>Você pode solicitar acesso, correção ou exclusão dos seus dados entrando em contato pelo e‑mail abaixo. Se usou Google Sign‑In, também pode gerenciar permissões diretamente pela sua conta Google.</p>
-
-  <h2>16. Contato</h2>
-  <p>Responsável pelos dados: <strong>Drillo</strong><br/>
-  E‑mail: <a href="mailto:drillosuporte@gmail.com">drillosuporte@gmail.com</a></p>
-
-  <footer>
-  <p>Esta política foi personalizada para o aplicativo <strong>Drillo Comanda Mobile</strong>.</p>
-  </footer>
-</body>
-</html>
-
+    <footer class="footer">
+      <div class="wrap">&copy; 2025 Drillo. Todos os direitos reservados.</div>
+    </footer>
+  </body>
+  </html>
